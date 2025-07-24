@@ -28,12 +28,7 @@ h1,h2{
 }
 
 h3{
-    font-weight: 600;
-}
-
-h4{
-    font-weight: 500;
-    font-family: var(--font-secondary);
+    color: var(--dark-02);
 }
 
 li{
@@ -49,8 +44,11 @@ li, a{
     font-weight: 600;
 }
 
+p, h3{
+    font-size: 2.2rem;
+}
+
 p{
-    font-size: 1.7rem;
     color: var(--dark-04);
 }
 
@@ -69,7 +67,6 @@ p{
     --btn-primary: #E95A08;
     --font-secondary: "Noto Serif", serif;
     --font-primary: "Inter", sans-serif;
-    --box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 
@@ -88,12 +85,17 @@ p{
 
 /* module / reuseable */
 
+.text-Vermilion{
+    color: var(--btn-primary);
+}
+
 .btn{
     background-color: var(--btn-primary);
     border: none;
     color: var(--white);
-    font-weight: bold;
-    padding: 1.4rem 2.4rem;
+    font-weight: 600;
+    font-size: 1.6rem;
+    padding: 2rem 4.5rem;
     cursor: pointer;
 }
 
@@ -176,10 +178,6 @@ p{
         justify-items: start;
     }
 
-    .section-nav--menu{
-        display: none;
-    }
-
     .mobile-top{
         margin-bottom: 1.3rem;
         display: flex;
@@ -207,6 +205,14 @@ p{
         font-weight: 600;
         font-size: 1.7rem;
     }
+
+    .section-nav--menu{
+        display: none;
+    }
+
+    .section-nav--cart{
+        font-size: 1.6rem;
+    }
 }
 
 /***** End navbar media query Section *****/
@@ -228,13 +234,8 @@ p{
     font-family: var(--font-secondary);
 }
 
-.banner-content--heading > span{
-    color: var(--btn-primary);
-}
-
 .banner-content--details{
     margin-top: 1.3rem;
-    font-size: 2.2rem;
 }
 
 .section-banner--image{
@@ -283,3 +284,87 @@ p{
 
 /***** End header Section *****/
 
+/***** main Section *****/
+
+/* .section-main */
+
+/***** plants Section *****/
+
+.section-main--plants{
+    margin-bottom: 21rem;
+    text-align: center;
+}
+
+.section-plants--heading,
+.section-plants--heading span{
+    font-size: 5rem;
+}
+
+.section-plants--details{
+    margin-block: 1.6rem 4.9rem;
+    padding-inline: 12.6rem;
+    font-size: 2.2rem;
+}
+
+.section-plants--cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3rem 2rem;
+}
+
+.cards-item--image{
+    margin-bottom: 3rem;
+}
+
+.cards-item--image img{
+    width: 100%;
+}
+
+.cards-item--name{
+    font-weight: 500;
+}
+
+.cards-item--price{
+    margin-block: 2rem 4rem;
+    font-weight: bold;
+}
+
+.cards-item--btn{
+    width: 100%;
+}
+
+/***** plants media query Section *****/
+
+/* for mobile */
+@media screen and (max-width: 640px) {
+
+    .section-plants--heading,
+    .section-plants--heading span{
+        font-size: 2.4rem;
+    }
+
+    .section-plants--details{
+        margin-block: 1.6rem 2.8rem;
+        padding-inline: 0;
+        font-size: 1.4rem;
+    }
+
+    .section-plants--cards{
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .cards-item--name,
+    .cards-item--price{
+        font-size: 1.6rem;
+    }
+
+    .cards-item--btn{
+        padding-inline: 2rem;
+    }
+}
+
+/***** End plants media query Section *****/
+
+/***** End plants Section *****/
+
+/***** End main Section *****/
