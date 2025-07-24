@@ -3,15 +3,71 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font awesome -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
     <!-- favicon -->
      <link rel="shortcut icon" href="assets/favicon21.png" type="image/x-icon">
 
-    <!-- tailwind cdn -->
-     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+     <!-- style sheet -->
+     <link rel="stylesheet" href="css/style.css">
 
     <title>FloraMark</title>
 </head>
 <body>
     
+    <!-- ========== Start header Section ========== -->
+    
+    <header class="section-header">
+
+        <!-- for mobile -->
+         <div class="mobile-top">
+            <div class="mobile-top--left">
+                <p>9:41</p>
+            </div>
+            <div class="mobile-top--right">
+                <i class="fa-solid fa-signal"></i>
+                <i class="fa-solid fa-wifi"></i>
+                <i class="fa-solid fa-battery-full"></i>
+            </div>
+         </div>
+        
+        <!-- ========== Start navbar Section ========== -->
+        
+        <nav class="section-header--nav container">
+            <div class="section-nav--brand">
+                <figure class="nav-brand--logo">
+                    <img src="assets/logo.png" alt="flowMark logo">
+                </figure>
+            </div>
+            <div class="section-nav--menu">
+                <figure class="nav-menu--icon">
+                    <i class="fa-solid fa-bars"></i>
+                </figure>
+                <ul class="nav-menu--items">
+                        <li class="nav-menu--item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="nav-menu--item">
+                            <a href="#">Shop</a>
+                        </li>
+                        <li class="nav-menu--item">
+                            <a href="#">About Us</a>
+                        </li>
+                </ul>
+            </div>
+            <div class="section-nav--cart">
+                <i class="fa-solid fa-cart-shopping"></i>
+                Cart ($56)
+            </div>
+        </nav>
+        
+        <!-- ========== End navbar Section ========== -->
+
+    </header>
+    
+    <!-- ========== End header Section ========== -->
+
 </body>
 </html>
