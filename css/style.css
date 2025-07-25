@@ -419,7 +419,7 @@ p{
 }
 
 .content-paragraphs--item ~ .content-paragraphs--item{
-    margin-top: 1.5rem;
+    margin-top: 1rem;
 }
 
 .content-paragraphs--item p{
