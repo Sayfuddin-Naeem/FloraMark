@@ -610,7 +610,88 @@ p{
 
 /***** End deals media query Section *****/
 
-
 /***** End deals Section *****/
+
+/***** subscription Section *****/
+
+.section-main--subscription{
+    width: 100%;
+    height: 53.3rem;
+    background-image: url('../assets/news-letter-bg.png');
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.section-main--subscription.bg-overlay::before{
+    background-color: rgba(0, 0, 0, 0.1);
+}
+
+.subscription-content--heading{
+    color: var(--white);
+    margin-bottom: 2.3rem;
+    text-align: center;
+}
+
+.subscription-content--email{
+    display: flex;
+}
+
+.subscription-content--email input,
+.subscription-content--email button{
+    height: 5rem;
+}
+
+.subscription-content--email input{
+    width: 64.4rem;
+    padding: 1.55rem 2rem;
+    transition: box-shadow 0.3s ease-in-out;
+}
+
+.subscription-content--email input:focus{
+    outline: none;
+    border: 1px solid var(--btn-primary);
+    box-shadow: 0 0 0.7rem var(--btn-primary);
+}
+
+.subscription-content--email button{
+    width: 18.6rem;
+    padding-inline: 5.35rem;
+    border: none;
+    background-color: var(--btn-primary);
+    color: var(--white);
+    font-weight: 600;
+    font-size: 1.7rem;
+    cursor: pointer;
+}
+
+/***** subscription media query Section *****/
+
+/* for mobile */
+@media screen and (max-width: 640px) {
+    .section-main--subscription{
+        height: 27.5rem;
+    }
+
+    .subscription-content--heading{
+        font-size: 2rem;
+    }
+
+    .subscription-content--email input{
+        width: 21.8rem;
+    }
+
+    .subscription-content--email button{
+        width: 10.3rem;
+        padding-inline: 1.2rem;
+        font-size: 1.6rem;
+    }
+}
+
+/***** End subscription media query Section *****/
+
+/***** End subscription Section *****/
 
 /***** End main Section *****/
