@@ -27,6 +27,10 @@ h1,h2{
     font-family: var(--font-secondary);
 }
 
+h2{
+    font-size: 5rem;
+}
+
 h3{
     color: var(--dark-02);
 }
@@ -295,7 +299,6 @@ p{
     text-align: center;
 }
 
-.section-plants--heading,
 .section-plants--heading span{
     font-size: 5rem;
 }
@@ -338,6 +341,10 @@ p{
 /* for mobile */
 @media screen and (max-width: 640px) {
 
+    .section-main--plants{
+        margin-bottom: 4.15rem;
+    }
+
     .section-plants--heading,
     .section-plants--heading span{
         font-size: 2.4rem;
@@ -366,5 +373,82 @@ p{
 /***** End plants media query Section *****/
 
 /***** End plants Section *****/
+
+/***** plants lover Section *****/
+
+.section-main--plants-lover{
+    margin-bottom: 13.4rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 6rem;
+    align-items: center;
+}
+
+.section-plants-lover--images{
+    position: relative;
+}
+
+
+.plants-lover--image img{
+    width: 100%;
+}
+
+.plants-lover--image:last-child{
+    width: 28.6rem;
+    aspect-ratio: 1;
+    position: absolute;
+    top: -12.5rem;
+    right: -9rem;
+}
+
+.section-plants-lover--content{
+    padding-block: 3.8rem;
+}
+
+.plants-lover-content--heading{
+    margin-bottom: 2rem;
+}
+
+.plants-lover-content--paragraphs{
+    margin-left: 3rem;
+}
+
+.content-paragraphs--item{
+    list-style: disc;
+    color: var(--dark-04)
+}
+
+.content-paragraphs--item ~ .content-paragraphs--item{
+    margin-top: 2rem;
+}
+
+/***** plants lover media query Section *****/
+
+/* for mobile */
+@media screen and (max-width: 640px) {
+    
+    .section-main--plants-lover{
+        grid-template-columns: 1fr;
+        gap: 1.8rem;
+    }
+
+    .plants-lover--image:last-child{
+        display: none;
+    }
+
+    .plants-lover-content--heading{
+        font-size: 2.4rem;
+    }
+
+    .content-paragraphs--item p{
+        font-size: 1.4rem;
+    }
+}
+
+/***** End plants lover media query Section *****/
+
+/***** End plants lover Section *****/
+
+
 
 /***** End main Section *****/
