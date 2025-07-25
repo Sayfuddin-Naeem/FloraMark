@@ -422,6 +422,10 @@ p{
     margin-top: 2rem;
 }
 
+.content-paragraphs--item p{
+    font-size: 2rem;
+}
+
 /***** plants lover media query Section *****/
 
 /* for mobile */
